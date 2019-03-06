@@ -5,6 +5,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { OrderComponent } from './pages/order/order.component';
 import { ScheduleComponent } from './pages/schedule/schedule.component';
 import { ProductComponent } from './pages/product/product.component';
+import { LoginComponent } from './pages/login/login.component';
 
 
 
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path:'order', component: OrderComponent},
   {path:'schedule', component: ScheduleComponent},
   {path:'product', component: ProductComponent},
+  {path:'login', component: LoginComponent},
 
 ];
 
