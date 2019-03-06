@@ -1,0 +1,48 @@
+<app-top></app-top>
+
+<div class="box">
+  <div class="content">
+    
+    <!-- title -->
+    <div class="row">
+      <div class="col-md-10">
+          <h1> cadastro de produtos</h1>
+      </div>
+    </div>
+
+    <!-- body -->
+    <div>
+
+      <div class="row">
+        
+        <div class="col-md-8">
+          <input class="form-control" type="text" [(ngModel)]="product.description" placeholder="Descrição">
+        </div>
+        
+        <div class="col-md-4">
+          <input class="form-control" type="text" [(ngModel)]="product.barcode" placeholder="codigo">
+        </div>
+
+      </div>
+
+      <div class="row">
+        
+          <div class="col-md-4">
+            <input class="form-control" type="text" [(ngModel)]="product.group" placeholder="Grupo">
+          </div>
+          
+          <div class="col-md-4">
+            <input class="form-control" type="text" [(ngModel)]="product.provider" placeholder="Fornecedor">
+          </div>
+  
+          <div class="col-md-4">
+            <input class="form-control" type="text" [(ngModel)]="product.purchase_unit" placeholder="Preço unidade venda">
+          </div>
+        </div>
+
+        <button class="btn btn-primary" (click)="save()"> Salvar </button>
+        <button class="btn btn-danger" (click)="delete()"> Excluir </button>
+    </div>
+
+  </div>
+</div>

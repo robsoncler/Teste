@@ -1,0 +1,33 @@
+<div class="content">
+
+  <div class="flex full-width">
+
+    <!-- menu -->
+    <div class="space-between full-width">
+      
+      <!-- logo -->
+      <p routerLink="/dashboard">
+        logo
+      </p>
+
+      <!-- user information -->
+      <div class="circle" (click)="menu = true">
+        OC  
+      </div>
+    </div>
+
+  </div>
+
+  <div class="menu" *ngIf="menu">
+    <div class="flex-end margin" (click)="menu = false"> <b> X </b> </div>
+    <div class="flex-center full-width full-height">
+      <p routerLink="/schedule">Agenda</p>
+      <p>Orçamento</p>
+      <p routerLink="/order">Pedido</p>
+      <p routerLink="/product">Cadastros</p>
+      <p></p>
+    </div>
+     
+  </div>
+  
+</div>
